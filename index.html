@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random circul</title>
+    <style>
+        div{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener("click",(a)=>{
+            const myDiv = document.createElement("div"); 
+            document.body.appendChild(myDiv);
+            myDiv.style.position = "absolute"
+            myDiv.style.left = `${a.clientX-15}px`
+            myDiv.style.top = `${a.clientY-15}px`
+        })
+    </script>
+</body>
+</html>
